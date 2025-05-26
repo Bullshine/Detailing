@@ -104,6 +104,9 @@ a {
     padding: 10px;
   }
 }
+td.price {
+  white-space: nowrap;
+}
 
 .large-title {
   font-size: 34px; 
