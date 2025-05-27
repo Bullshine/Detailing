@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'MojaCzcionka';
+  src: url('czcionka.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'MojaCzcionka', Arial, sans-serif;
   background-color: white;
   color: #222;
   margin: 0;
@@ -75,9 +82,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 @media (max-width: 768px) {
   .large-title {
-    font-size: 48px; /* zamiast 112px – na telefonach */
+    font-size: 48px;
     text-align: center;
   }
 
@@ -104,10 +112,11 @@ a {
     padding: 10px;
   }
 }
+
 td.price {
   white-space: nowrap;
 }
 
 .large-title {
-  font-size: 34px; 
+  font-size: 34px;
 }
