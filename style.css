@@ -7,10 +7,11 @@
 
 body {
   font-family: 'MojaCzcionka', Arial, sans-serif;
-  background-color: white;
+  background-color: #dddddd;
   color: #222;
   margin: 0;
   padding: 0;
+  font-weight: 600;
 }
 
 .container {
@@ -45,8 +46,8 @@ h1, h2 {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 16px;
+  margin-top: 22px;
+  font-size: 18px;
 }
 
 td {
@@ -59,13 +60,13 @@ td {
 }
 
 .note {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 10px;
   color: #555;
 }
 
 .small-note {
-  font-size: 12px;
+  font-size: 13px;
   color: #777;
 }
 
@@ -75,7 +76,7 @@ td {
 }
 
 .contact-info {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 a {
@@ -118,5 +119,5 @@ td.price {
 }
 
 .large-title {
-  font-size: 34px;
+  font-size: 36px;
 }
