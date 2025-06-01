@@ -121,3 +121,55 @@ td.price {
 .large-title {
   font-size: 36px;
 }
+.floating-contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-family: inherit;
+  text-align: center;
+}
+
+.floating-contact button {
+  background-color: orange;
+  color: white;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.popup {
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.popup a {
+  display: block;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 6px 0;
+}
+
+.popup a:hover {
+  color: orange;
+}
+.brands {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.brand-logos img {
+  height: 50px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
