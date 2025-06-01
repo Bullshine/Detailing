@@ -5,22 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BULLSHINE - Autodetailing</title>
   <link rel="stylesheet" href="style.css" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0X1T19RZ2T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0X1T19RZ2T');
-</script>
 </head>
 <body>
+
+<div class="floating-contact">
+  <button onclick="toggleContact()">📞 Zadzwoń / Napisz</button>
+  <div id="contact-popup" class="popup" style="display: none;">
+    <a href="tel:+48730184818">📞 Zadzwoń: 730 184 818</a>
+    <a href="sms:+48730184818">✉️ SMS: 730 184 818</a>
+    <a href="https://wa.me/48730184818" target="_blank">💬 WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  function toggleContact() {
+    const popup = document.getElementById("contact-popup");
+    popup.style.display = popup.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+
   <div class="container">
     <header>
       <img src="ad.png" alt="BULLSHINE Logo" class="logo" />
       <h1 class="highlighted large-title">BULLSHINE</h1>
       <p class="tagline">
-        Kompleksowa pielęgnacja Twojego samochodu, od prostego odkurzania, przez mycie po detailing.
+        Kompleksowa pielęgnacja Twojego samochodu, od prostego odkurzania mycia po detaling.
       </p>
     </header>
 
@@ -31,8 +41,10 @@
         <table>
           <tr><td>Odkurzanie auta</td><td>150zł</td></tr>
           <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Pranie auta <em>(z bagażnikiem)</em></td><td>+250zł</td></tr>
-          <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Pranie dywaników samochodowych <em>(materiałowych)</em></td><td>+100zł</td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Pranie dywaników samochodowych <em>
+(materiałowych)</em></td><td>+100zł</td></tr>
           <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Czyszczenie plastików</td><td>+100zł</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Czyszczenie skór</td><td>+100zł</td></tr>
           <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Mycie okien</td><td>+50zł</td></tr>
         </table>
       </div>
@@ -55,7 +67,20 @@
 <section class="contact centered-contact">
   <h2 class="highlighted">Kontakt</h2>
   <p class="contact-info highlighted">Telefon: <a href="tel:+48730184818">730 184 818</a></p>
-  <p class="contact-info">(można również sms)</p>
+</section>
+<section class="brands">
+  <h2 class="highlighted">Używamy sprawdzonych produktów:</h2>
+  <div class="brand-logos">
+    <img src="shinygarage.png" alt="Shiny Garage" />
+    <img src="tenzi.png" alt="Tenzi" />
+<img src="maguaier.png" alt="Meguiar's" />
+<img src="fresso.png" alt="Fresso" />
+<img src="k2.png" alt="K2" />
+<img src="soft99.png" alt="SOFT99" />
+    <img src="adbl.png" alt="ADBL" />
+<img src="lux tools.png" alt="LUX TOOLS" />
+<img src="ceramikker.png" alt="ceramikker" />
+  </div>
 </section>
 
 
