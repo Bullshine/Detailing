@@ -81,6 +81,57 @@
 <img src="lux tools.png" alt="LUX TOOLS" />
 <img src="ceramikker.png" alt="ceramikker" />
   </div>
+
 </section>
 
+<h3 class="highlighted" style="text-align:center;">Przykładowe zdjęcia naszych prac</h3>
+
+
+ <h3 style="text-align: center; color: black;">Kia EV6 – Czyszczenie plastików pod maską</h3>
+ 
+
+<div class="comparison-container">
+  <div class="comparison-wrapper">
+    <img src="przed.jpg" alt="Przed czyszczeniem" class="comparison-image before" />
+    <div class="after-wrapper">
+      <img src="po.jpg" alt="Po czyszczeniu" class="comparison-image after" />
+    </div>
+    <div class="slider" id="slider"></div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.comparison-wrapper').forEach(wrapper => {
+    const after = wrapper.querySelector('.after');
+    const slider = wrapper.querySelector('.slider');
+
+    function updateSlider(x) {
+      const bounds = wrapper.getBoundingClientRect();
+      x = Math.max(0, Math.min(x, bounds.width));
+      const percent = (x / bounds.width) * 100;
+      after.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+      slider.style.left = `${percent}%`;
+    }
+
+    wrapper.addEventListener('mousemove', (e) => {
+      updateSlider(e.clientX - wrapper.getBoundingClientRect().left);
+    });
+
+    wrapper.addEventListener('touchmove', (e) => {
+      updateSlider(e.touches[0].clientX - wrapper.getBoundingClientRect().left);
+    });
+  });
+</script>
+
+
+
+
+
+<footer class="disclaimer">
+  <p>* Przedstawiony cennik ma charakter informacyjny i nie stanowi oferty handlowej w rozumieniu art. 66 §1 Kodeksu Cywilnego.</p>
+</footer>
+
+
+</body>
+</html>
 
